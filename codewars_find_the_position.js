@@ -6,6 +6,13 @@ Input :: "a"
 Ouput :: "Position of alphabet: 1"
 */
 
-function position(letter){
-//Write your own Code!
+const position = (letter) => {
+  let alpha = 'abcdefghijklmnopqrstuvwxyz';
+  let index;
+  for(let i = 0; i < alpha.length; i++) {
+    if(alpha[i] === letter) {
+      index = i + 1;
+    }
+  }
+  return 'Position of alphabet: ' + index;
 }
